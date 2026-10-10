@@ -1,0 +1,58 @@
+name: Sync TrollFools index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'downloads/**.dylib'
+      - 'downloads/**.DYLIB'
+      - 'trollpackages.json'
+      - 'scripts/sync_index.py'
+      - 'scripts/tests/**'
+      - '.github/workflows/sync-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-index-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # GITHUB_TOKEN commits do not trigger push workflows; this guard also prevents
+    # an index-only bot commit from looping if the authentication changes later.
+    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message != 'chore(index): sync downloads [auto-index]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Run offline regression tests
+        run: python3 -m unittest discover -s scripts/tests -v
+      - name: Synchronize and commit only the manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Retry against latest main on a concurrent user push; never force-push.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python3 -m unittest discover -s scripts/tests -v
+            python3 scripts/sync_index.py
+            if git diff --quiet -- trollpackages.json; then
+              echo 'Index already synchronized; nothing to commit.'
+              exit 0
+            fi
+            git add -- trollpackages.json
+            git commit -m 'chore(index): sync downloads [auto-index]'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          echo 'Failed to push after 3 attempts; check branch protection or concurrent pushes.' >&2
+          exit 1

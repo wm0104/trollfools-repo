@@ -6,7 +6,8 @@
       "version": "1.0",
       "description": "DYYY_2.2-9（1653） 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
-      "section": "App 插件"
+      "section": "App 插件",
+      "size": "2177.00 KB"
     },
     {
       "name": "酷安去广告",
@@ -30,14 +31,16 @@
       "version": "1.0",
       "description": "哔哩哔哩去广告_1.0 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件"
+      "section": "App 插件",
+      "size": "161.75 KB"
     },
     {
       "name": "菜鸟去广告_1.0",
       "version": "1.0",
       "description": "菜鸟去广告_1.0 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件"
+      "section": "App 插件",
+      "size": "146.02 KB"
     }
   ]
 }
