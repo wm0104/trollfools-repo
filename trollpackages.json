@@ -25,6 +25,14 @@
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/12306_1.0.dylib",
       "section": "App 插件",
       "size": "161.17 KB"
+    },
+    {
+      "name": "ProMotion120",
+      "version": "1.0",
+      "description": "让应用获得120HZ",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/ProMotion120_1.0.dylib",
+      "section": "App 插件",
+      "size": "230.12 KB"
     }
   ]
 }
