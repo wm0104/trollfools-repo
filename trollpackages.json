@@ -2,12 +2,11 @@
   "repository_name": "wm0104 TrollFools 源",
   "packages": [
     {
-      "name": "拼多多去广告",
-      "version": "1.1",
-      "description": "拼多多去广告插件。版本依据提供的文件名；未经过运行测试，支持的 App/iOS 版本及依赖尚未确认。请手动选择目标 App，注入前备份。",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads-1.1.dylib",
-      "section": "App 插件",
-      "size": "104.64 KB"
+      "name": "DYYY_2.2-9（1653）",
+      "version": "1.0",
+      "description": "DYYY_2.2-9（1653） 插件",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
+      "section": "App 插件"
     },
     {
       "name": "酷安去广告",
@@ -19,44 +18,26 @@
       "bundle": "com.coolapk.app"
     },
     {
-      "name": "12306",
-      "version": "1.0",
-      "description": "12306去广告",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/12306_1.0.dylib",
+      "name": "拼多多去广告",
+      "version": "1.1",
+      "description": "拼多多去广告插件。版本依据提供的文件名；未经过运行测试，支持的 App/iOS 版本及依赖尚未确认。请手动选择目标 App，注入前备份。",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads-1.1.dylib",
       "section": "App 插件",
-      "size": "161.17 KB"
+      "size": "104.64 KB"
     },
     {
-      "name": "ProMotion120",
+      "name": "哔哩哔哩去广告_1.0",
       "version": "1.0",
-      "description": "让应用获得120HZ",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/ProMotion120_1.0.dylib",
-      "section": "App 插件",
-      "size": "230.12 KB"
-    },
-    {
-      "name": "哔哩哔哩去广告",
-      "version": "1.0",
-      "description": "哔哩哔哩去广告",
+      "description": "哔哩哔哩去广告_1.0 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件",
-      "size": "161.75 KB"
+      "section": "App 插件"
     },
     {
-      "name": "菜鸟去广告",
+      "name": "菜鸟去广告_1.0",
       "version": "1.0",
-      "description": "菜鸟去广告",
+      "description": "菜鸟去广告_1.0 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件",
-      "size": "146.02 KB"
-    },
-    {
-      "name": "闲鱼去广告1.0",
-      "version": "1.0",
-      "description": "限闲鱼去广告",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E9%97%B2%E9%B1%BC%E5%8E%BB%E5%B9%BF%E5%91%8A1.0_1.0.dylib",
-      "section": "App 插件",
-      "size": "103.56 KB"
+      "section": "App 插件"
     }
   ]
 }
