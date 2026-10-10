@@ -1,122 +1,122 @@
 {
-  "packages" : [
+  "packages": [
     {
-      "description" : "BUY内购",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/BUY%E5%86%85%E8%B4%AD.dylib",
-      "name" : "BUY内购",
-      "section" : "App 插件",
-      "size" : "105.59 KB",
-      "version" : "1.0"
+      "description": "BUY内购",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/BUY%E5%86%85%E8%B4%AD.dylib",
+      "name": "BUY内购",
+      "section": "App 插件",
+      "size": "105.59 KB",
+      "version": "1.0"
     },
     {
-      "description" : "DYYY_2.2-9（1653） 插件",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
-      "name" : "DYYY_2.2-9（1653）",
-      "section" : "App 插件",
-      "size" : "2177.00 KB",
-      "version" : "1.0"
+      "description": "DYYY_2.2-9（1653） 插件",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
+      "name": "DYYY_2.2-9（1653）",
+      "section": "App 插件",
+      "size": "2177.00 KB",
+      "version": "1.0"
     },
     {
-      "author" : "猫",
-      "bundle" : "com.tencent.xin",
-      "description" : "HBWechatHelper",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/HBWechatHelper.dylib",
-      "name" : "HBWechatHelper",
-      "section" : "App 插件",
-      "size" : "36972.88 KB",
-      "version" : "1.0"
+      "author": "猫",
+      "bundle": "com.tencent.xin",
+      "description": "HBWechatHelper",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/HBWechatHelper.dylib",
+      "name": "HBWechatHelper",
+      "section": "App 插件",
+      "size": "36972.88 KB",
+      "version": "1.0"
     },
     {
-      "description" : "ProMotion120",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/ProMotion120.dylib",
-      "name" : "ProMotion120",
-      "section" : "App 插件",
-      "size" : "230.12 KB",
-      "version" : "1.0"
+      "author": "猫",
+      "bundle": "com.tencent.xin",
+      "description": "MiYou",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/MiYou.dylib",
+      "name": "MiYou",
+      "section": "App 插件",
+      "size": "12486.90 KB",
+      "version": "1.0"
     },
     {
-      "description" : "WCPush2Chat",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/WCPush2Chat.dylib",
-      "name" : "WCPush2Chat",
-      "section" : "App 插件",
-      "size" : "160.16 KB",
-      "version" : "1.0"
+      "description": "ProMotion120",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/ProMotion120.dylib",
+      "name": "ProMotion120",
+      "section": "App 插件",
+      "size": "230.12 KB",
+      "version": "1.0"
     },
     {
-      "description" : "WCSurfaceTrim",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/WCSurfaceTrim.dylib",
-      "name" : "WCSurfaceTrim",
-      "section" : "App 插件",
-      "size" : "303.42 KB",
-      "version" : "1.0"
+      "description": "WCPush2Chat",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/WCPush2Chat.dylib",
+      "name": "WCPush2Chat",
+      "section": "App 插件",
+      "size": "160.16 KB",
+      "version": "1.0"
     },
     {
-      "bundle" : "com.coolapk.app",
-      "description" : "酷安去广告",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/coolapk-noads-1.0.dylib",
-      "name" : "酷安去广告",
-      "section" : "App 插件",
-      "size" : "161.67 KB",
-      "version" : "1.0"
+      "description": "WCSurfaceTrim",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/WCSurfaceTrim.dylib",
+      "name": "WCSurfaceTrim",
+      "section": "App 插件",
+      "size": "303.42 KB",
+      "version": "1.0"
     },
     {
-      "description" : "「隐藏版」微信插件收纳+",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E3%80%8C%E9%9A%90%E8%97%8F%E7%89%88%E3%80%8D%E5%BE%AE%E4%BF%A1%E6%8F%92%E4%BB%B6%E6%94%B6%E7%BA%B3%2B_0.1.dylib",
-      "name" : "「隐藏版」微信插件收纳+",
-      "section" : "App 插件",
-      "size" : "161.64 KB",
-      "version" : "0.1"
+      "bundle": "com.coolapk.app",
+      "description": "酷安去广告",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/coolapk-noads-1.0.dylib",
+      "name": "酷安去广告",
+      "section": "App 插件",
+      "size": "161.67 KB",
+      "version": "1.0"
     },
     {
-      "description" : "中国广电",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5.dylib",
-      "name" : "中国广电",
-      "section" : "App 插件",
-      "size" : "103.71 KB",
-      "version" : "1.0"
+      "description": "「隐藏版」微信插件收纳+",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E3%80%8C%E9%9A%90%E8%97%8F%E7%89%88%E3%80%8D%E5%BE%AE%E4%BF%A1%E6%8F%92%E4%BB%B6%E6%94%B6%E7%BA%B3%2B_0.1.dylib",
+      "name": "「隐藏版」微信插件收纳+",
+      "section": "App 插件",
+      "size": "161.64 KB",
+      "version": "0.1"
     },
     {
-      "description" : "哔哩哔哩去广告_1.0 插件",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "name" : "哔哩哔哩去广告_1.0",
-      "section" : "App 插件",
-      "size" : "161.75 KB",
-      "version" : "1.0"
+      "description": "中国广电",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5.dylib",
+      "name": "中国广电",
+      "section": "App 插件",
+      "size": "103.71 KB",
+      "version": "1.0"
     },
     {
-      "description" : "拼多多去广告",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%8E%BB%E5%B9%BF%E5%91%8A.dylib",
-      "name" : "拼多多去广告",
-      "section" : "App 插件",
-      "size" : "104.64 KB",
-      "version" : "1.0"
+      "description": "哔哩哔哩去广告_1.0 插件",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
+      "name": "哔哩哔哩去广告_1.0",
+      "section": "App 插件",
+      "size": "161.75 KB",
+      "version": "1.0"
     },
     {
-      "description" : "菜鸟去广告_1.0 插件",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "name" : "菜鸟去广告_1.0",
-      "section" : "App 插件",
-      "size" : "146.02 KB",
-      "version" : "1.0"
+      "description": "拼多多去广告",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%8E%BB%E5%B9%BF%E5%91%8A.dylib",
+      "name": "拼多多去广告",
+      "section": "App 插件",
+      "size": "104.64 KB",
+      "version": "1.0"
     },
     {
-      "description" : "键盘小增强",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E9%94%AE%E7%9B%98%E5%B0%8F%E5%A2%9E%E5%BC%BA.dylib",
-      "name" : "键盘小增强",
-      "section" : "App 插件",
-      "size" : "106.05 KB",
-      "version" : "1.0"
+      "description": "菜鸟去广告_1.0 插件",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
+      "name": "菜鸟去广告_1.0",
+      "section": "App 插件",
+      "size": "146.02 KB",
+      "version": "1.0"
     },
     {
-      "author" : "猫",
-      "bundle" : "com.tencent.xin",
-      "description" : "MiYou",
-      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/MiYou.dylib",
-      "name" : "MiYou",
-      "section" : "App 插件",
-      "size" : "12.19 MB",
-      "version" : "1.0"
+      "description": "键盘小增强",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E9%94%AE%E7%9B%98%E5%B0%8F%E5%A2%9E%E5%BC%BA.dylib",
+      "name": "键盘小增强",
+      "section": "App 插件",
+      "size": "106.05 KB",
+      "version": "1.0"
     }
   ],
-  "repository_name" : "wm0104 TrollFools 源"
+  "repository_name": "wm0104 TrollFools 源"
 }
