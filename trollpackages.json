@@ -1,54 +1,62 @@
 {
-  "repository_name": "wm0104 TrollFools 源",
-  "packages": [
+  "packages" : [
     {
-      "name": "DYYY_2.2-9（1653）",
-      "version": "1.0",
-      "description": "DYYY_2.2-9（1653） 插件",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
-      "section": "App 插件",
-      "size": "2177.00 KB"
+      "description" : "DYYY_2.2-9（1653） 插件",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
+      "name" : "DYYY_2.2-9（1653）",
+      "section" : "App 插件",
+      "size" : "2177.00 KB",
+      "version" : "1.0"
     },
     {
-      "name": "ProMotion120",
-      "version": "1.0",
-      "section": "App 插件",
-      "description": "ProMotion120",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/ProMotion120.dylib",
-      "size": "230.12 KB"
+      "description" : "ProMotion120",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/ProMotion120.dylib",
+      "name" : "ProMotion120",
+      "section" : "App 插件",
+      "size" : "230.12 KB",
+      "version" : "1.0"
     },
     {
-      "name": "酷安去广告",
-      "version": "1.0",
-      "description": "酷安去广告",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/coolapk-noads-1.0.dylib",
-      "section": "App 插件",
-      "size": "161.67 KB",
-      "bundle": "com.coolapk.app"
+      "bundle" : "com.coolapk.app",
+      "description" : "酷安去广告",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/coolapk-noads-1.0.dylib",
+      "name" : "酷安去广告",
+      "section" : "App 插件",
+      "size" : "161.67 KB",
+      "version" : "1.0"
     },
     {
-      "name": "拼多多去广告",
-      "version": "1.1",
-      "description": "拼多多去广告插件。版本依据提供的文件名；未经过运行测试，支持的 App/iOS 版本及依赖尚未确认。请手动选择目标 App，注入前备份。",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads-1.1.dylib",
-      "section": "App 插件",
-      "size": "104.64 KB"
+      "description" : "拼多多去广告插件。版本依据提供的文件名；未经过运行测试，支持的 App\/iOS 版本及依赖尚未确认。请手动选择目标 App，注入前备份。",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/pinduoduo-noads-1.1.dylib",
+      "name" : "拼多多去广告",
+      "section" : "App 插件",
+      "size" : "104.64 KB",
+      "version" : "1.1"
     },
     {
-      "name": "哔哩哔哩去广告_1.0",
-      "version": "1.0",
-      "description": "哔哩哔哩去广告_1.0 插件",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件",
-      "size": "161.75 KB"
+      "description" : "哔哩哔哩去广告_1.0 插件",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
+      "name" : "哔哩哔哩去广告_1.0",
+      "section" : "App 插件",
+      "size" : "161.75 KB",
+      "version" : "1.0"
     },
     {
-      "name": "菜鸟去广告_1.0",
-      "version": "1.0",
-      "description": "菜鸟去广告_1.0 插件",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
-      "section": "App 插件",
-      "size": "146.02 KB"
+      "description" : "菜鸟去广告_1.0 插件",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
+      "name" : "菜鸟去广告_1.0",
+      "section" : "App 插件",
+      "size" : "146.02 KB",
+      "version" : "1.0"
+    },
+    {
+      "description" : "BUY内购",
+      "dylib" : "https:\/\/wm0104.github.io\/trollfools-repo\/downloads\/BUY%E5%86%85%E8%B4%AD.dylib",
+      "name" : "BUY内购",
+      "section" : "App 插件",
+      "size" : "105.6 KB",
+      "version" : "1.0"
     }
-  ]
+  ],
+  "repository_name" : "wm0104 TrollFools 源"
 }
