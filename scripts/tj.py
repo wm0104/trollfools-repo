@@ -17,7 +17,8 @@ def main():
     for file in files:
         print(f'\n=== {file.name} ===')
         subprocess.run([sys.executable, str(ROOT / 'scripts/add_plugin.py'), str(file)], cwd=ROOT, check=True)
-        print('原件仍保留在 inbox；上传成功后请移出 inbox，避免下次重复处理。')
+        if file.exists():
+            print('未完成上传，原件仍保留在 inbox。')
 
 if __name__ == '__main__':
     try:

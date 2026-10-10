@@ -65,6 +65,16 @@ def main():
     run('git', 'add', 'downloads', 'trollpackages.json')
     run('git', 'commit', '-m', f'Add TrollFools plugin {name} {version}')
     run('git', 'push', 'origin', 'main')
+    if source.parent == (ROOT / 'inbox').resolve():
+        backup = ROOT / 'uploaded'
+        backup.mkdir(exist_ok=True)
+        archived = backup / source.name
+        counter = 1
+        while archived.exists():
+            archived = backup / f'{source.stem}_{counter}{source.suffix}'
+            counter += 1
+        shutil.move(str(source), str(archived))
+        print(f'原件已自动备份到：{archived}')
     print('已推送。GitHub Actions 将自动校验并发布。')
 
 if __name__ == '__main__':
