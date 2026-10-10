@@ -8,15 +8,6 @@
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads-1.1.dylib",
       "section": "App 插件",
       "size": "104.64 KB"
-    },
-    {
-      "name": "pinduoduo-noads",
-      "version": "1.0",
-      "description": "拼多多去广告",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads_1.0.dylib",
-      "section": "App 插件",
-      "size": "104.64 KB",
-      "bundle": "com.xunmeng.pinduoduo"
     }
   ]
 }
