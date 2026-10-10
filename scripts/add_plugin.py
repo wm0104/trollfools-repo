@@ -14,8 +14,13 @@ DOWNLOADS = ROOT / 'downloads'
 
 def ask(prompt, default=''):
     suffix = f' [{default}]' if default else ''
-    value = input(f'{prompt}{suffix}: ').strip()
-    return value or default
+    while True:
+        value = input(f'{prompt}{suffix}: ').strip() or default
+        try:
+            value.encode('utf-8', errors='strict')
+            return value
+        except UnicodeEncodeError:
+            print('输入含无效编码，请重新输入（可先用英文，稍后补中文说明）。')
 
 def run(*args):
     subprocess.run(args, cwd=ROOT, check=True)
@@ -54,7 +59,10 @@ def main():
     if bundle:
         item['bundle'] = bundle
     data.setdefault('packages', []).append(item)
-    MANIFEST.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    encoded = (json.dumps(data, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    temporary = MANIFEST.with_suffix('.json.tmp')
+    temporary.write_bytes(encoded)
+    temporary.replace(MANIFEST)
     print(f'\n已准备：{target.relative_to(ROOT)}')
     print(f'名称：{name}\n版本：{version}\n描述：{description}')
     if bundle:
