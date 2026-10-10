@@ -23,7 +23,8 @@ jobs:
   sync:
     # GITHUB_TOKEN commits do not trigger push workflows; this guard also prevents
     # an index-only bot commit from looping if the authentication changes later.
-    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message != 'chore(index): sync downloads [auto-index]'
+    if: >-
+      github.event_name == 'workflow_dispatch' || github.event.head_commit.message != 'chore(index): sync downloads [auto-index]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
