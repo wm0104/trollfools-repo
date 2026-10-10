@@ -34,20 +34,20 @@
       "version": "1.0"
     },
     {
-      "description": "拼多多去广告插件。版本依据提供的文件名；未经过运行测试，支持的 App/iOS 版本及依赖尚未确认。请手动选择目标 App，注入前备份。",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/pinduoduo-noads-1.1.dylib",
-      "name": "拼多多去广告",
-      "section": "App 插件",
-      "size": "104.64 KB",
-      "version": "1.1"
-    },
-    {
       "description": "哔哩哔哩去广告_1.0 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
       "name": "哔哩哔哩去广告_1.0",
       "section": "App 插件",
       "size": "161.75 KB",
       "version": "1.0"
+    },
+    {
+      "name": "拼多多去广告",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "拼多多去广告",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%8E%BB%E5%B9%BF%E5%91%8A.dylib",
+      "size": "104.64 KB"
     },
     {
       "description": "菜鸟去广告_1.0 插件",
