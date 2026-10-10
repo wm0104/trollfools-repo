@@ -17,6 +17,14 @@
       "section": "App 插件",
       "size": "161.67 KB",
       "bundle": "com.coolapk.app"
+    },
+    {
+      "name": "12306",
+      "version": "1.0",
+      "description": "12306去广告",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/12306_1.0.dylib",
+      "section": "App 插件",
+      "size": "161.17 KB"
     }
   ]
 }
