@@ -29,7 +29,7 @@ class SyncTests(unittest.TestCase):
         digest = hashlib.sha256(file.read_bytes()).digest()
         result = synchronize(self.root, self.data)
         self.assertEqual(result['packages'], [{'name': 'new', 'version': '9.9',
-            'description': 'new', 'section': 'App 插件',
+            'description': 'new', 'section': '插件',
             'dylib': BASE + 'downloads/new_9.9.dylib', 'size': '1.00 KB'}])
         self.assertEqual(result['custom_repository_field'], 42)
         self.assertEqual(hashlib.sha256(file.read_bytes()).digest(), digest)
