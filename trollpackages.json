@@ -25,6 +25,22 @@
       "version": "1.0"
     },
     {
+      "name": "WCPush2Chat",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "WCPush2Chat",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/WCPush2Chat.dylib",
+      "size": "160.16 KB"
+    },
+    {
+      "name": "WCSurfaceTrim",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "WCSurfaceTrim",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/WCSurfaceTrim.dylib",
+      "size": "303.42 KB"
+    },
+    {
       "bundle": "com.coolapk.app",
       "description": "酷安去广告",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/coolapk-noads-1.0.dylib",
@@ -32,6 +48,22 @@
       "section": "App 插件",
       "size": "161.67 KB",
       "version": "1.0"
+    },
+    {
+      "name": "「隐藏版」微信插件收纳+",
+      "version": "0.1",
+      "section": "App 插件",
+      "description": "「隐藏版」微信插件收纳+",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E3%80%8C%E9%9A%90%E8%97%8F%E7%89%88%E3%80%8D%E5%BE%AE%E4%BF%A1%E6%8F%92%E4%BB%B6%E6%94%B6%E7%BA%B3%2B_0.1.dylib",
+      "size": "161.64 KB"
+    },
+    {
+      "name": "中国广电",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "中国广电",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5.dylib",
+      "size": "103.71 KB"
     },
     {
       "description": "哔哩哔哩去广告_1.0 插件",
@@ -56,6 +88,14 @@
       "section": "App 插件",
       "size": "146.02 KB",
       "version": "1.0"
+    },
+    {
+      "name": "键盘小增强",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "键盘小增强",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E9%94%AE%E7%9B%98%E5%B0%8F%E5%A2%9E%E5%BC%BA.dylib",
+      "size": "106.05 KB"
     }
   ],
   "repository_name": "wm0104 TrollFools 源"
