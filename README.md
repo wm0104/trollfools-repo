@@ -20,7 +20,7 @@ https://wm0104.github.io/trollfools-repo/
 
 构建会验证必需字段、JSON 和本仓库下载链接。此检查不证明插件安全或运行兼容性。只上传拥有分发权的插件，不执行来源不明的文件。
 
-## tj 快捷提交（推荐）
+## tf-tj 快捷提交（推荐）
 
 首次在 iSH 中进入仓库执行：
 
@@ -30,7 +30,7 @@ sh scripts/install_tj.sh
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-将 dylib 放进仓库的 `inbox/` 文件夹，在终端输入 `tj` 即可逐个填写名称、版本、功能说明和可选 Bundle ID，然后确认提交推送。`inbox/` 不会被 Git 提交；原件保留，成功上传后请移出该目录。命令不自动拉取或覆盖修改，推送失败请先检查 Git 提示。
+将 dylib 放进仓库的 `inbox/` 文件夹，在终端输入 `tf-tj` 即可逐个填写名称、版本、功能说明和可选 Bundle ID，然后确认提交推送。`inbox/` 不会被 Git 提交；原件保留，成功上传后请移出该目录。命令不自动拉取或覆盖修改，推送失败请先检查 Git 提示。
 
 ## 在 iSH 中上传新插件
 
