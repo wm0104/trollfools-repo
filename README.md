@@ -12,15 +12,28 @@ https://wm0104.github.io/trollfools-repo/
 
 ## 维护
 
-1. 将插件上传到 downloads/（建议使用英文文件名）。
-2. 在根目录 trollpackages.json 的 packages 中新增条目。
-3. 必需字段：name、version、description、dylib（HTTPS 下载地址）。
-4. 可选：bundle（核实后的目标 App Bundle ID）、app_url、icon_url、section、size、author、screenshots。
-5. 提交到 main 后自动发布。仅上传文件不会自动新增列表，需同时编辑 JSON。
+1. 将插件上传到 `downloads/`，文件名建议为 `插件名称_版本.dylib`，例如 `淘宝去广告_1.0.dylib`。
+2. 提交到 `main` 后，Actions 会自动扫描新文件并生成 `trollpackages.json`。
+3. 名称和版本从文件名识别；无法识别时默认使用文件名和版本 `1.0`。
+4. 自动生成的描述是占位说明；如需详细描述、`bundle`、图标或截图，再手动编辑 `trollpackages.json`。
+5. 提交到 main 后自动发布。构建会保留已有手动条目，不会重复添加同一个下载链接。
 
 构建会验证必需字段、JSON 和本仓库下载链接。此检查不证明插件安全或运行兼容性。只上传拥有分发权的插件，不执行来源不明的文件。
 
-## 当前插件
+## 在 iSH 中上传新插件
+
+推荐使用交互式脚本，提交前会要求填写功能描述并确认：
+
+```sh
+cd /path/to/trollfools-repo
+git pull
+python3 scripts/add_plugin.py /path/to/你的插件.dylib
+```
+
+它会询问插件名称、版本、**功能/描述**和可选的目标 App Bundle ID；描述不能为空，最后还会再次询问是否提交并推送。确认后，脚本自动复制文件、更新 `trollpackages.json`、提交并推送，Actions 再自动发布。
+
+如果取消最后确认，文件和索引只保留在本地，不会推送。
+
 
 拼多多去广告 1.1：按用户提供文件收录，未运行或验证注入兼容性；未核实作者及目标 Bundle ID，故省略相关字段。不将文件名作为兼容性证明。
 
