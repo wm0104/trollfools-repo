@@ -82,7 +82,7 @@ def synchronize(root, data):
     for path, file in sorted(files.items()):
         package = local.get(path, {})
         name, version = filename_defaults(file.stem)
-        defaults = {'name': name, 'version': version, 'section': 'App 插件'}
+        defaults = {'name': name, 'version': version, 'section': '插件'}
         for key, value in defaults.items():
             if key not in package or package[key] is None or package[key] == '':
                 package[key] = value
