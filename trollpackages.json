@@ -10,6 +10,14 @@
       "size": "2177.00 KB"
     },
     {
+      "name": "ProMotion120",
+      "version": "1.0",
+      "section": "App 插件",
+      "description": "ProMotion120",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/ProMotion120.dylib",
+      "size": "230.12 KB"
+    },
+    {
       "name": "酷安去广告",
       "version": "1.0",
       "description": "酷安去广告",
