@@ -88,7 +88,8 @@ def synchronize(root, data):
                 package[key] = value
         if 'description' not in package or package['description'] is None or package['description'] == '':
             package['description'] = package['name']
-        package['dylib'] = BASE + quote(path, safe='/')
+        # Temporary SLP filename compatibility test; keep original binary filename.
+        package['dylib'] = BASE + (path if path == 'downloads/中国广电.dylib' else quote(path, safe='/'))
         package['size'] = format_size(file.stat().st_size)
         packages.append(package)
     result = copy.deepcopy(data)
