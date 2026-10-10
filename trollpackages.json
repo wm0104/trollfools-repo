@@ -49,6 +49,14 @@
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E8%8F%9C%E9%B8%9F%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
       "section": "App 插件",
       "size": "146.02 KB"
+    },
+    {
+      "name": "闲鱼去广告1.0",
+      "version": "1.0",
+      "description": "限闲鱼去广告",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E9%97%B2%E9%B1%BC%E5%8E%BB%E5%B9%BF%E5%91%8A1.0_1.0.dylib",
+      "section": "App 插件",
+      "size": "103.56 KB"
     }
   ]
 }
