@@ -1,0 +1,13 @@
+{
+  "repository_name": "中文文件名测试源（仅测试）",
+  "packages": [
+    {
+      "description": "中国广电",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/中国广电.dylib",
+      "name": "中国广电",
+      "section": "App 插件",
+      "size": "103.71 KB",
+      "version": "1.0"
+    }
+  ]
+}
