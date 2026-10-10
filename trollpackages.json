@@ -13,7 +13,7 @@
       "name": "酷安去广告",
       "version": "1.0",
       "description": "酷安去广告",
-      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/%E9%85%B7%E5%AE%89%E5%8E%BB%E5%B9%BF%E5%91%8A_1.0.dylib",
+      "dylib": "https://wm0104.github.io/trollfools-repo/downloads/coolapk-noads-1.0.dylib",
       "section": "App 插件",
       "size": "161.67 KB",
       "bundle": "com.coolapk.app"
