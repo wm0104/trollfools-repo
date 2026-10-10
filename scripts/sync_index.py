@@ -30,6 +30,16 @@ def local_path(url):
     return normalized[len('/trollfools-repo/'):]
 
 
+def filename_defaults(stem):
+    """Only a complete trailing dotted numeric version is unambiguous.
+
+    Accept Name_1.2.0, Name-v2.0 and Name-2.0; do not guess from embedded
+    digits, dates, build annotations or a lone trailing number.
+    """
+    match = re.fullmatch(r'(.+)[_-][vV]?(\d+(?:\.\d+)+)', stem)
+    return (match.group(1), match.group(2)) if match else (stem, '1.0')
+
+
 def format_size(size):
     return f'{size / 1024:.2f} KB'
 
@@ -71,11 +81,13 @@ def synchronize(root, data):
     packages = []
     for path, file in sorted(files.items()):
         package = local.get(path, {})
-        defaults = {'name': file.stem, 'version': '1.0', 'description': file.stem,
-                    'section': 'App 插件'}
+        name, version = filename_defaults(file.stem)
+        defaults = {'name': name, 'version': version, 'section': 'App 插件'}
         for key, value in defaults.items():
             if key not in package or package[key] is None or package[key] == '':
                 package[key] = value
+        if 'description' not in package or package['description'] is None or package['description'] == '':
+            package['description'] = package['name']
         package['dylib'] = BASE + quote(path, safe='/')
         package['size'] = format_size(file.stat().st_size)
         packages.append(package)

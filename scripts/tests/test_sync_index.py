@@ -28,8 +28,8 @@ class SyncTests(unittest.TestCase):
         file = self.file('new_9.9.dylib')
         digest = hashlib.sha256(file.read_bytes()).digest()
         result = synchronize(self.root, self.data)
-        self.assertEqual(result['packages'], [{'name': 'new_9.9', 'version': '1.0',
-            'description': 'new_9.9', 'section': 'App 插件',
+        self.assertEqual(result['packages'], [{'name': 'new', 'version': '9.9',
+            'description': 'new', 'section': 'App 插件',
             'dylib': BASE + 'downloads/new_9.9.dylib', 'size': '1.00 KB'}])
         self.assertEqual(result['custom_repository_field'], 42)
         self.assertEqual(hashlib.sha256(file.read_bytes()).digest(), digest)
@@ -111,6 +111,42 @@ class SyncTests(unittest.TestCase):
         (self.root / 'downloads' / 'link.dylib').symlink_to(target)
         with self.assertRaises(ValueError):
             synchronize(self.root, self.data)
+
+    def test_explicit_versions_and_ambiguous_names(self):
+        cases = [('Plugin_1.2.0', 'Plugin', '1.2.0'),
+                 ('Plugin-v2.0', 'Plugin', '2.0'),
+                 ('Plugin-2.0', 'Plugin', '2.0'),
+                 ('中文 插件_3.1', '中文 插件', '3.1'),
+                 ('ProMotion120', 'ProMotion120', '1.0'),
+                 ('Plugin-2026', 'Plugin-2026', '1.0'),
+                 ('DYYY_2.2-9（1653）', 'DYYY_2.2-9（1653）', '1.0')]
+        for stem, name, version in cases:
+            with self.subTest(stem=stem):
+                self.file(stem + '.dylib')
+                items = synchronize(self.root, self.data)['packages']
+                item = next(p for p in items if local_path(p['dylib']) == 'downloads/' + stem + '.dylib')
+                self.assertEqual((item['name'], item['version'], item['description']),
+                                 (name, version, name))
+
+    def test_same_name_different_paths_are_independent(self):
+        self.file('Plugin_1.2.0.dylib')
+        self.file('Plugin-v2.0.dylib')
+        self.file('nested/Plugin-v2.0.dylib')
+        items = synchronize(self.root, self.data)['packages']
+        self.assertEqual(len(items), 3)
+        self.assertEqual({p['name'] for p in items}, {'Plugin'})
+        self.assertEqual(len({p['dylib'] for p in items}), 3)
+
+    def test_filename_version_never_overwrites_manual_values(self):
+        self.file('Plugin-v2.0.dylib')
+        self.data['packages'] = [{'dylib': BASE + 'downloads/Plugin-v2.0.dylib',
+                                 'name': 'Manual name', 'version': '1.0',
+                                 'description': 'Manual description', 'custom': True}]
+        item = synchronize(self.root, self.data)['packages'][0]
+        self.assertEqual(item['version'], '1.0')
+        self.assertEqual(item['description'], 'Manual description')
+        self.assertEqual(item['name'], 'Manual name')
+        self.assertTrue(item['custom'])
 
     def test_non_dylib_not_discovered(self):
         self.file('ignore.deb')
