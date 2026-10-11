@@ -1,13 +1,13 @@
 {
   "packages": [
     {
-      "description": "BUY内购",
+      "description": "",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/BUY%E5%86%85%E8%B4%AD.dylib",
       "name": "BUY内购",
       "section": "插件",
       "size": "105.59 KB",
       "version": "1.0"
-    },
+    , "author": "", "bundle": ""},
     {
       "description": "DYYY_2.2-9（1653） 插件",
       "dylib": "https://wm0104.github.io/trollfools-repo/downloads/DYYY_2.2-9%EF%BC%881653%EF%BC%89.dylib",
