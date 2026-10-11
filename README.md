@@ -1,4 +1,4 @@
-TrollFools源：
+# TrollFools(SLP)
 
 粘贴到SLP版的TrollFools即可： 
 
